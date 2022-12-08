@@ -1,3 +1,55 @@
 body{
     text-align: center;
+    background-image: url(../images/clocks-1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+select{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: silver;
+    font-size: 18px;
+}
+h2{
+    font-size: 40px;
+    padding-top: 20px;
+}
+h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 0;
+}
+small{
+    font-size: 20px;
+    vertical-align: middle;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: 1px dashed rgba(0,0,0,0.2);
+}
+.grid:last-child{
+    border: none;
+}
+footer{
+    margin: 20px;
+    color: white;
+}
+footer a{
+    color: goldenrod;
 }
