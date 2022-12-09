@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>World clocks</title>
 </head>
@@ -12,41 +14,42 @@
     <h1>World Clocks</h1>
     <select>
         <option value="">Select a city</option>
-        <option value="perth">Perth🇦🇺</option>
-        <option value="mumbai">Mumbai🇮🇳</option>
+        <option value="halifax">Halifax🇨🇦</option> 
+        <option value="houston">Houston🇺🇸</option>
         <option value="kyoto">Kyoto🇯🇵</option>
     </select>
     <div class="cities">
-        <div class="grid">
+        <div class="grid city" id="perth">
            <div>
-            <h3>Houston🇺🇸</h3>
+            <h3 >Perth🇦🇺</h3>
         <h4 class="date">December 9th, 2022</h4>
            </div> 
            <div>
             <h2 class="time">1:48 <small>AM</small></h2>
            </div>
         </div>
-        <div class="grid">
+
+        <div class="grid city" id="kolkata">
             <div>
-             <h3>Halifax🇨🇦</h3>
+             <h3 >Kolkata🇮🇳</h3>
          <h4 class="date">December 9th, 2022</h4>
             </div> 
             <div>
              <h2 class="time">1:48 <small>AM</small></h2>
             </div>
          </div>
-         <div class="grid">
+         <div class="grid city" id="amsterdam">
             <div>
-             <h3>Amsterdam🇳🇱</h3>
+             <h3 >Amsterdam🇳🇱</h3>
          <h4 class="date">December 9th, 2022</h4>
             </div> 
             <div>
              <h2 class="time">1:48 <small>AM</small></h2>
             </div>
          </div>
-         <div class="grid">
+         <div class="grid city" id="paramaribo">
             <div>
-             <h3>Paramaribo🇸🇷</h3>
+             <h3 >Paramaribo🇸🇷</h3>
          <h4 class="date">December 9th, 2022</h4>
             </div> 
             <div>
