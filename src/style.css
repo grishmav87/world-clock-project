@@ -1,18 +1,22 @@
 body{
     text-align: center;
-    background-image: url(../images/clocks-1.jpg);
+    background-image: url(../images/clocks-1.jpg) ;
     background-size:cover;
     background-repeat: no-repeat;
-    width: 500px;
-    margin: 20px auto;
+    min-height: 100vh;
+    
 }
 
 .container{
-    width: 100%;
-    margin: 0 auto;
+    max-width: 500px;
+    margin: 70px auto;
+    margin-bottom: 0px;
     padding: 15px;
     border-radius: 20px;
-    background: whitesmoke;
+    color: whitesmoke;
+    background: black;
+    opacity: 0.85;
+    
 }
 select{
     width: 50%;
@@ -20,6 +24,9 @@ select{
     border-radius: 5px;
     border-color: silver;
     font-size: 18px;
+}
+h1{
+    font-size: 44px;
 }
 h2{
     font-size: 40px;
@@ -47,9 +54,40 @@ small{
     border: none;
 }
 footer{
-    margin: 20px;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 15px;
     color: white;
+    background: black;
+    opacity: 0.8;
+    width: 500px;
 }
 footer a{
     color: goldenrod;
+}
+@media (max-width:700px){
+    .container{
+        max-width: 350px;
+        margin: 20px auto;
+    }
+    select{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 30px;
+        padding: 10px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    footer{
+        font-size: 14px;
+        width: 350px;
+    };
 }
