@@ -62,7 +62,8 @@ footer{
     opacity: 0.8;
     width: 500px;
 }
-footer a{
+
+a{
     color: goldenrod;
 }
 @media (max-width:700px){
