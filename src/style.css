@@ -1,15 +1,20 @@
+
+
 body{
     text-align: center;
     background-image: url(../images/clocks-1.jpg) ;
     background-size:cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    font-family: 'Quicksand', sans-serif;
     
 }
-
+.container-out{
+    margin: 0 auto; max-width: 500px;
+}
 .container{
-    max-width: 500px;
-    margin: 70px auto;
+   
+    margin: 50px auto;
     margin-bottom: 0px;
     padding: 15px;
     border-radius: 20px;
@@ -60,15 +65,17 @@ footer{
     color: white;
     background: black;
     opacity: 0.8;
-    width: 500px;
+    
 }
 
 a{
     color: goldenrod;
 }
 @media (max-width:700px){
+    .container-out{
+        margin: 0 auto;
+    }
     .container{
-        max-width: 350px;
         margin: 20px auto;
     }
     select{
@@ -78,7 +85,7 @@ a{
         font-size: 36px;
     }
     h2{
-        font-size: 30px;
+        font-size: 26px;
         padding: 10px;
     }
     h3{
@@ -89,6 +96,40 @@ a{
     }
     footer{
         font-size: 14px;
-        width: 350px;
+    }
+    a{
+        font-size: 14px;
+    };
+}
+
+
+@media (max-width:300px){
+    .container-out{
+        margin: 0 auto;
+    }
+    .container{
+        margin: 20px auto;
+    }
+    select{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+        padding: 10px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    footer{
+        font-size: 14px;
+    }
+    a{
+        font-size: 14px;
     };
 }

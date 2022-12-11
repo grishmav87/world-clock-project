@@ -6,64 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     <title>World clocks</title>
 </head>
 <body>
-   <div class="container">
-    <h1>World Clock</h1>
-    <select id="city">
-        <option value="">Select a city</option>
-        <option value="current">My current location</option>
-        <option value="America/Halifax">Halifax</option> 
-        <option value="America/New_York">New York</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-    </select>
-    <div id="cities">
-        <div class="grid city" id="perth">
-           <div>
-            <h3 >Perth</h3>
-        <h4 class="date">December 9th, 2022</h4>
-           </div> 
-           <div>
-            <h2 class="time">1:48 <small>AM</small></h2>
+    <div class="container-out">
+        <div class="container">
+            <h1>World Clock</h1>
+            <select id="city">
+                <option value="">Select a city</option>
+                <option value="current">My current location</option>
+                <option value="America/Halifax">Halifax</option> 
+                <option value="America/New_York">New York</option>
+                <option value="Asia/Tokyo">Tokyo</option>
+            </select>
+            <div id="cities">
+                <div class="grid city" id="perth">
+                   <div>
+                    <h3 >Perth</h3>
+                <h4 class="date">December 9th, 2022</h4>
+                   </div> 
+                   <div>
+                    <h2 class="time">1:48 <small>AM</small></h2>
+                   </div>
+                </div>
+        
+                <div class="grid city" id="kolkata">
+                    <div>
+                     <h3 >Kolkata</h3>
+                 <h4 class="date">December 9th, 2022</h4>
+                    </div> 
+                    <div>
+                     <h2 class="time">1:48 <small>AM</small></h2>
+                    </div>
+                 </div>
+                 <div class="grid city" id="amsterdam">
+                    <div>
+                     <h3 >Amsterdam</h3>
+                 <h4 class="date">December 9th, 2022</h4>
+                    </div> 
+                    <div>
+                     <h2 class="time">1:48 <small>AM</small></h2>
+                    </div>
+                 </div>
+                 <div class="grid city" id="paramaribo">
+                    <div>
+                     <h3 >Paramaribo</h3>
+                 <h4 class="date">December 9th, 2022</h4>
+                    </div> 
+                    <div>
+                     <h2 class="time">1:48 <small>AM</small></h2>
+                    </div>
+                 </div>
+                 
+            
+            </div>
+            <div class="all-cities"> <a href="index.html">All cities</a></div>
            </div>
-        </div>
-
-        <div class="grid city" id="kolkata">
-            <div>
-             <h3 >Kolkata</h3>
-         <h4 class="date">December 9th, 2022</h4>
-            </div> 
-            <div>
-             <h2 class="time">1:48 <small>AM</small></h2>
-            </div>
-         </div>
-         <div class="grid city" id="amsterdam">
-            <div>
-             <h3 >Amsterdam</h3>
-         <h4 class="date">December 9th, 2022</h4>
-            </div> 
-            <div>
-             <h2 class="time">1:48 <small>AM</small></h2>
-            </div>
-         </div>
-         <div class="grid city" id="paramaribo">
-            <div>
-             <h3 >Paramaribo</h3>
-         <h4 class="date">December 9th, 2022</h4>
-            </div> 
-            <div>
-             <h2 class="time">1:48 <small>AM</small></h2>
-            </div>
-         </div>
-         
-    
+            
+            <footer>Coded by <strong>Grishma V.</strong> (<a href="https://github.com/grishmav87/world-clock-project" target="_blank">open-sourced</a>)</footer>
     </div>
-    <div class="all-cities"> <a href="index.html">All cities</a></div>
-   </div>
-    
-    <footer>This project was coded by <strong>Grishma V.</strong> and is <a href="https://github.com/grishmav87/world-clock-project" target="_blank">open-sourced</a></footer>
+   
     <script src="src/index.js"></script>
 </body>
 </html>
