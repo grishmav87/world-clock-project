@@ -37,4 +37,29 @@ if (paramariboElement){
 }
 }
 updateTime();
-setInterval(updateTime,1000)
+setInterval(updateTime,1000);
+let intervalID=0;
+function updateCity(event){
+  
+clearInterval(intervalID);
+  intervalID = setInterval(() => {
+    let cityTimeZone = event.target.value; 
+        let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+        let cityTime = moment().tz(cityTimeZone);
+        let citiesElement=document.querySelector("#cities");
+    citiesElement.innerHTML = `
+    <div class="grid city">
+    <div>
+     <h3>${cityName}</h3>
+ <h4 class="date">${cityTime.format("MMMM Do YYYY")}</h4>
+    </div> 
+    <div>
+     <h2 class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></h2>
+    </div>
+ </div>`
+  },1000);  
+  
+}
+
+let citySelectElement=document.querySelector("#city");
+citySelectElement.addEventListener("change", updateCity);
